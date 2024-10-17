@@ -1,0 +1,26 @@
+{
+  "name": "quickwind",
+  "version": "0.0.3",
+  "description": "Quickwind is a fast and efficient Tailwind CSS build tool.",
+  "main": "index.js",
+  "repository": "https://github.com/CR072/quickwind",
+  "bin": {
+    "quickwind": "./index.js"
+  },
+  "author": {
+    "name": "CR072",
+    "url": "https://github.com/CR072"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "build",
+    "quickwind",
+    "quick",
+    "binary-search",
+    "zero-dependencies"
+  ],
+  "engines": {
+    "node": ">=20.7"
+  }
+}
