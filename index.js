@@ -8,6 +8,8 @@ if ("init" === process.argv[2]) {
             n,
             "/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n  mode: 'jit',\n  content: [\n    \"./views/*.{html,js,jsx,tsx}\",\n  ],\n  output: './tailwind.css',\n  theme: {\n    extend: {\n      colors: {\n        white: '#FFFFFF'\n      }\n    },\n  },\n  plugins: [],\n}"
         );
+} else if ("watch" === process.argv[2] || "w" === process.argv[2] || "--watch" === process.argv[2]) {
+    require("./src/watcher");
 } else {
     console.time("Built in")
     const { build: t } = require("./src/extract"),
